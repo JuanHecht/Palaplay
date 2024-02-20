@@ -7,7 +7,8 @@ const API_URL = "http://localhost:3001/gameCards";
 
 function MyGames() {
   const [searchName, setSearchName] = useState("");
-  const [filteredGames, setFilteredGames] = useState([]);
+  const [hostedGames, setHostedGames] = useState([]);
+  const [joinedGames, setJoinedGames] = useState([]);
 
   const handleSearchChange = (e) => {
     setSearchName(e.target.value);
@@ -16,10 +17,14 @@ function MyGames() {
   const searchGames = () => {
     axios.get(API_URL)
       .then(response => {
-        const filtered = response.data.filter(game =>
+        const filterHost = response.data.filter(game =>
           game.players[0] === searchName
         );
-        setFilteredGames(filtered);
+        const  filterJoin = response.data.filter(game =>
+          game.players.includes(searchName) && game.players[0] !== searchName
+        )
+        setJoinedGames(filterJoin);
+        setHostedGames(filterHost);
         setError(null);
       })
       .catch((error)=>console.log(error))
@@ -28,7 +33,7 @@ function MyGames() {
   function removeItem(id) {
     axios.delete(`${API_URL}/${id}`)
       .then(() => {
-        setFilteredGames(prevGames => prevGames.filter(game => game.id !== id));
+        setHostedGames(prevGames => prevGames.filter(game => game.id !== id));
       })
       .catch((error)=>console.log(error))
   }
@@ -46,8 +51,9 @@ function MyGames() {
             <button onClick={searchGames}>Search</button>
         </div>
 
-      <div className="">
-        {filteredGames.map(game => (
+      <div className="hostedGames">
+        <h1>Games that you host</h1>
+        {hostedGames.map(game => (
           <div key={game.id}>
             <GameCard game={game} />
             <div>
@@ -56,6 +62,14 @@ function MyGames() {
                 </Link>
                 <button onClick={() => removeItem(game.id)}>Delete Game</button>
             </div>
+          </div>
+        ))}
+      </div>
+      <div className="joinedGames">
+        <h1>Games that you joined</h1>
+        {joinedGames.map(game => (
+          <div key={game.id}>
+            <GameCard game={game} />
           </div>
         ))}
       </div>

@@ -7,6 +7,7 @@ import GameInfo from './pages/GameInfo'
 import CreateGame from './pages/CreateGame';
 import MyGames from './pages/MyGames';
 import EditGame from './pages/EditGame';
+import MyFriends from './pages/MyFriends';
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
         <Route path="/createGame" element={<CreateGame />} />
         <Route path="/my games" element={<MyGames />} />
         <Route path="/editGame/:gameId" element={<EditGame />} />
+        <Route path="/my friends" element={<MyFriends />} />
       </Routes>
       {/* <Footer /> */}
     </div>

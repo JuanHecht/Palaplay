@@ -1,29 +1,58 @@
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import MapView from "../components/MapView";
 
-const API_URL = "http://localhost:3001/gameCards"; 
+const API_URL = "http://localhost:3001/gameCards";
 
-function GameInfo(){
-    
-    const [game, setGame] = useState({});
+function GameInfo() {
+
+    const [game, setGame] = useState([]);
+    const [newPlayerName, setNewPlayerName] = useState("");
     const { gameId } = useParams();
-    const navigate = useNavigate();
-    
+    // We were loading empty information as first so implemented this solution
+    const [isLoading, setIsLoading] = useState(true);
+
     useEffect(() => {
         axios.get(`${API_URL}/${gameId}`)
-        .then(response => {
-            setGame(response.data);
-        })
-        .catch(error => {
-            console.error('Error fetching game:', error);
-        });
-    }, [gameId]); 
+            .then(response => {
+                setGame(response.data);
+                setIsLoading(false)
+            })
+            .catch(error => {
+                console.error('Error fetching game:', error);
+            });
 
-    const players = game.players || [];
+    }, []);
 
-    return  (
+    const players = game.players;
+
+    const handleAddPlayer = () => {
+        if (newPlayerName.trim() !== "") {
+            let updatedPlayers;
+            const indexOfEmpty = players.findIndex(player => player === "");
+            if (indexOfEmpty !== -1) {
+                updatedPlayers = [...players];
+                updatedPlayers[indexOfEmpty] = newPlayerName;
+            } else {
+                updatedPlayers = [...players, newPlayerName];
+            }
+            axios.put(`${API_URL}/${gameId}`, { players: updatedPlayers })
+                .then(response => {
+                    setGame(prevState => ({
+                        ...prevState,
+                        players: updatedPlayers
+                    }));
+                })
+                .catch(error => {
+                    console.error('Error updating game:', error);
+                });
+            setNewPlayerName("");
+        }
+    };
+    if (isLoading) return (<p>loading</p>);
+
+    return (
         <div>
             <div><h1>{game.title}</h1></div>
             <div className="players">
@@ -38,9 +67,27 @@ function GameInfo(){
                 <p>The level of the match is {game.level}</p>
                 <p>Location: {game.location}</p>
             </div>
-
+            <div className="add-player">
+                <h2>Type your name to join the game</h2>
+                {players.length < 4 ? (
+                    <>
+                        <input
+                            type="text"
+                            placeholder="Enter your name"
+                            value={newPlayerName}
+                            onChange={(e) => setNewPlayerName(e.target.value)}
+                        />
+                        <button onClick={handleAddPlayer}>Join game</button>
+                    </>
+                ) : (
+                    <p>The game is full, you cannot join anymore.</p>
+                )}
+            </div>
+            <MapView game={game} height='400px' width='400px' zoom='10'/>
         </div>
     )
 }
 
 export default GameInfo;
+
+

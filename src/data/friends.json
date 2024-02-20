@@ -1,0 +1,61 @@
+{
+    "friends": [
+      {
+        "name": "João",
+        "age": 28,
+        "gender": "male",
+        "level": "intermediate",
+        "profile_img": "src/assets/images/profile_picture.webp"
+      },
+      {
+        "name": "Maria",
+        "age": 25,
+        "gender": "female",
+        "level": "beginner",
+        "profile_img": "https://example.com/maria_profile"
+      },
+      {
+        "name": "Rui",
+        "age": 30,
+        "gender": "male",
+        "level": "advanced",
+        "profile_img": "https://example.com/rui_profile"
+      },
+      {
+        "name": "Ana",
+        "age": 29,
+        "gender": "female",
+        "level": "intermediate",
+        "profile_img": "https://example.com/ana_profile"
+      },
+      {
+        "name": "Pedro",
+        "age": 26,
+        "gender": "male",
+        "level": "beginner",
+        "profile_img": "https://example.com/pedro_profile"
+      },
+      {
+        "name": "Sofia",
+        "age": 27,
+        "gender": "female",
+        "level": "advanced",
+        "profile_img": "https://example.com/sofia_profile"
+      },
+      {
+        "name": "Miguel",
+        "age": 31,
+        "gender": "male",
+        "level": "intermediate",
+        "profile_img": "https://example.com/miguel_profile"
+      },
+      {
+        "name": "Inês",
+        "age": 24,
+        "gender": "female",
+        "level": "beginner",
+        "profile_img": "https://example.com/ines_profile"
+      }
+    ]
+  }
+  
