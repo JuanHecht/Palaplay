@@ -34,7 +34,7 @@ function ResponsiveAppBar() {
             sx={{ flexGrow: 1, color: 'white', display: { xs: 'none', md: 'block' } }}
           >
             <Link to="/">
-              <img src="../assets/images/gabriela.jpg" alt="Logo" height="40" />
+              <img src="../../src/assets/images/gabriela.jpg" alt="Logo" height="40" />
               PALAPADEL
             </Link>
           </Typography>
