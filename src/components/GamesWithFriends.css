@@ -1,0 +1,17 @@
+.friendsBanner{
+    background-color: #CBD5C0;
+    padding: 15px;
+}
+
+.friendsGameCard{
+    background-color: #DFE6DA;
+    padding: 7px;
+    margin: 10px 0;
+    border: 1px solid ;
+}
+.titleContainer{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}

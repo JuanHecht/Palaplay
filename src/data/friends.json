@@ -1,61 +1,124 @@
 {
-    "friends": [
-      {
-        "name": "João",
-        "age": 28,
-        "gender": "male",
-        "level": "intermediate",
-        "profile_img": "src/assets/images/profile_picture.webp"
-      },
-      {
-        "name": "Maria",
-        "age": 25,
-        "gender": "female",
-        "level": "beginner",
-        "profile_img": "https://example.com/maria_profile"
-      },
-      {
-        "name": "Rui",
-        "age": 30,
-        "gender": "male",
-        "level": "advanced",
-        "profile_img": "https://example.com/rui_profile"
-      },
-      {
-        "name": "Ana",
-        "age": 29,
-        "gender": "female",
-        "level": "intermediate",
-        "profile_img": "https://example.com/ana_profile"
-      },
-      {
-        "name": "Pedro",
-        "age": 26,
-        "gender": "male",
-        "level": "beginner",
-        "profile_img": "https://example.com/pedro_profile"
-      },
-      {
-        "name": "Sofia",
-        "age": 27,
-        "gender": "female",
-        "level": "advanced",
-        "profile_img": "https://example.com/sofia_profile"
-      },
-      {
-        "name": "Miguel",
-        "age": 31,
-        "gender": "male",
-        "level": "intermediate",
-        "profile_img": "https://example.com/miguel_profile"
-      },
-      {
-        "name": "Inês",
-        "age": 24,
-        "gender": "female",
-        "level": "beginner",
-        "profile_img": "https://example.com/ines_profile"
-      }
-    ]
-  }
+  "friends": [
+    {
+      "name": "Gabriela Silva",
+      "age": 40,
+      "gender": "Female",
+      "level": "Beginner",
+      "profile_img": "src/assets/images/gabriela.jpg"
+    },
+    {
+      "name": "Piyush Bisht",
+      "age": 27,
+      "gender": "Male",
+      "level": "Advanced",
+      "profile_img": "src/assets/images/piyush.png"
+    },
+    {
+      "name": "Maria Fernanda Carvalho",
+      "age": 27,
+      "gender": "Female",
+      "level": "Begginer",
+      "profile_img": "src/assets/images/fernanda.png"
+    },
+    {
+      "name": "Filipe Vieira",
+      "age": 31,
+      "gender": "Male",
+      "level": "Intermediate",
+      "profile_img": "src/assets/images/vieira.jpg"
+    },
+    {
+      "name": "Diogo Alves",
+      "age": 78,
+      "gender": "Male",
+      "level": "Advanced",
+      "profile_img": "src/assets/images/manuel.jpg"
+    },
+    {
+      "name": "Miguel Henriques",
+      "age": 30,
+      "gender": "Male",
+      "level": "Beginner",
+      "profile_img": "src/assets/images/miguel.jpg"
+    },
+    {
+      "name": "Pedro Costa",
+      "age": 37,
+      "gender": "Male",
+      "level": "Beginner",
+      "profile_img": "src/assets/images/pedro.png"
+    },
+    {
+      "name": "Tushar Sunder",
+      "age": 26,
+      "gender": "Male",
+      "level": "Beginner",
+      "profile_img": "src/assets/images/tushar.jpg"
+    },
+    {
+      "name": "Mariana Franco",
+      "age": 24,
+      "gender": "Female",
+      "level": "Advanced",
+      "profile_img": "src/assets/images/mariana.png"
+    },
+    {
+      "name": "Tomás Bastos",
+      "age": 34,
+      "gender": "Male",
+      "level": "Advanced",
+      "profile_img": "src/assets/images/tomas.jpg"
+    },
+    {
+      "name": "Filipe Teixeira",
+      "age": 22,
+      "gender": "Male",
+      "level": "Intermediate",
+      "profile_img": "src/assets/images/teixeira.jpg"
+    },
+    {
+      "name": "Daniel Costa",
+      "age": 29,
+      "gender": "Male",
+      "level": "Advanced",
+      "profile_img": "src/assets/images/daniel.png"
+    },
+    {
+      "name": "Bernardo De Melo",
+      "age": 24,
+      "gender": "Male",
+      "level": "Advanced",
+      "profile_img": "src/assets/images/bernardo1.jpg"
+    },
+    {
+      "name": "Rui Marques",
+      "age": 30,
+      "gender": "Male",
+      "level": "Begginer",
+      "profile_img": "src/assets/images/rui.png"
+    },
+    {
+      "name": "Diana Ramos",
+      "age": 37,
+      "gender": "Female",
+      "level": "Begginer",
+      "profile_img": "src/assets/images/diana.png"
+    },
+    {
+      "name": "Juan Hecht",
+      "age": 20,
+      "gender": "Male",
+      "level": "Advanced",
+      "profile_img": "src/assets/images/juan.jpg"
+    },
+    {
+      "name": "Leonardo Oliveira",
+      "age": 25,
+      "gender": "Male",
+      "level": "Begginer",
+      "profile_img": "src/assets/images/leonardo.png"
+    }
+  ]
+}
   

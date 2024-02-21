@@ -1,0 +1,23 @@
+.levelBanner{
+    background-color: #CBD5C0;
+    padding: 15px;
+}
+
+.levelGameCard{
+    background-color: #DFE6DA;
+    padding: 7px;
+    margin: 10px 0;
+    border: 1px solid ;
+}
+
+.titleContainer{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleContainer select{
+    margin-left: 15px;
+    height: 20px;
+}

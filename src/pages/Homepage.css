@@ -1,0 +1,21 @@
+.mainHomePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.gameRecommendations{
+    width: 80%;
+    display: flex;
+    background-color: #DFE6DA;
+    padding: 10px;
+}
+
+.friendsBanner, .levelBanner{
+    height: 620px;
+}
+
+.friends, .level{
+    width: 50%;
+    margin: 0 10px;
+}

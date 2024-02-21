@@ -3,7 +3,7 @@ import axios from "axios";
 import GameCard from "../components/GameCard";
 import { Link } from "react-router-dom";
 
-const API_URL = "http://localhost:3001/gameCards"; 
+const API_URL = "https://json-server-palaplay.onrender.com/gameCards"; 
 
 function MyGames() {
   const [searchName, setSearchName] = useState("");

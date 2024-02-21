@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MapView from "../components/MapView";
 
-const API_URL = "http://localhost:3001/gameCards";
+const API_URL = "https://json-server-palaplay.onrender.com/gameCards";
 
 function GameInfo() {
 

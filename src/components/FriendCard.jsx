@@ -5,7 +5,7 @@ function FriendCard({ friend }) {
     return (
         <Card style={{ margin: 20, backgroundColor: '#CBD5C0'}}>
             <CardContent>
-            <img src={friend.profile_img} alt={friend.name} style={{ width: '100%', marginTop: 10 }} />
+            <img src={friend.profile_img} alt={friend.name} style={{ width: '230px', marginTop: 10, height: '230px', objectFit: 'cover' }} />
                 <Typography variant="h5" component="h2">
                     {friend.name}
                 </Typography>

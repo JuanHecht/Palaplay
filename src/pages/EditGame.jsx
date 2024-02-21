@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import locations from '../data/locations.json'
 
-const API_URL = "http://localhost:3001/gameCards";
+const API_URL = "https://json-server-palaplay.onrender.com/gameCards";
 
 function EditGame() {
   const [formData, setFormData] = useState({

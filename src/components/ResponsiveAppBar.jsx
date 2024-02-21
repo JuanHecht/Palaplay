@@ -10,7 +10,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 
-const pages = ['My Games', 'My friends', ''];
+const pages = ['Games','My Games', 'My friends'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -34,7 +34,7 @@ function ResponsiveAppBar() {
             sx={{ flexGrow: 1, color: 'white', display: { xs: 'none', md: 'block' } }}
           >
             <Link to="/">
-              <img src="src/assets/images/afb13bddf95b5b3434c1a3b50ce0f003.png" alt="Logo" height="40" />
+              <img src="src/assets/images/logo.png" alt="Logo" height="40" />
               PALAPADEL
             </Link>
           </Typography>
