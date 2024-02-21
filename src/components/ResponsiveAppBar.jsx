@@ -9,7 +9,6 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-import '../../public'
 
 const pages = ['Games','My Games', 'My friends'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
