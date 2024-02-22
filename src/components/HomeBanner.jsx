@@ -1,15 +1,22 @@
 import './HomeBanner.css'
+import { Link } from 'react-router-dom';
 
 function HomeBanner(){
     return(
         <div className='main'>
+            <div className='title'>
+                <h1>Find your next match</h1>
+                <h1>Play padel today</h1>
+            </div>
             <div className="imgContainer">
-                <img src='src/assets/images/banner_img.webp' alt="" />
+                <img src='assets/images/racket2.png' alt="" />
             </div>
             <div className="textContainer">
-                <h1>Get started playing padel today!</h1>
+                
                 <p>With Palaplay you can find new padel tennis games, buddies, courts, events and much more!</p>
-                <button>Search games</button>
+                <Link to={'/games'}>
+                    <button>Search games</button>
+                </Link>
             </div>
         </div>
     )

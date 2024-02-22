@@ -1,16 +1,70 @@
-.main{
-    display: flex;
-    justify-content: center;
-    background-color: #CBD5C0;
-    width: 80%;
-    padding: 20px;
-    margin: 25px 0;
+.main {
+    position: relative;
+    height: 100vh; 
+  }
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .title h1 {
+    font-size: 120px; 
+    color: #DFE6DA; /* Set the color of the title */
+  }
+  
+  .imgContainer {
+    position: relative;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    z-index: 0; /* Move the image behind other content */
+    opacity: 70%;
 }
 
-.imgContainer img{
-    width: 150px;
-
+.imgContainer img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
 }
-p{
-    font-size: 15px;
+  
+.textContainer {
+    position: absolute;
+    top: 85%;
+    left: 65%;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 1;
 }
+  
+  .textContainer h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .textContainer p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e53935;
+  }
+  

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import locations from '../data/locations.json'
 
 const API_URL = "https://json-server-palaplay.onrender.com/gameCards";
 
@@ -58,13 +59,14 @@ function NewGameForm() {
       </div>
       <div>
         <label>Location:</label>
-        <input
-          type="text"
-          name="location"
-          value={formData.location}
-          onChange={handleChange}
-          required
-        />
+        <select name="location"
+            onChange={handleChange}>
+            {locations.map(location =>{
+                return (
+                <option value={location.name} key={location.name}>{location.name}</option>
+                )
+            })}
+        </select>
       </div>
       <div>
         <label>Date:</label>
