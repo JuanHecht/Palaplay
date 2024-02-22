@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import locations from '../data/locations.json'
+import './CreateGame.css'
 
 const API_URL = "https://json-server-palaplay.onrender.com/gameCards";
 

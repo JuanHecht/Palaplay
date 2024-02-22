@@ -11,6 +11,16 @@
     color: #013220;
 }
 
+.card h3{
+    font-size: 25px;
+    color: #014421;
+}
+
+.card p{
+    font-size: 17px;
+    color: #355E3B;
+}
+
 .gameDetails{
     width: 33%;
 }

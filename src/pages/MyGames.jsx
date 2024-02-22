@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import GameCard from "../components/GameCard";
 import { Link } from "react-router-dom";
+import './MyGames.css'
 
 const API_URL = "https://json-server-palaplay.onrender.com/gameCards"; 
 
@@ -39,9 +40,9 @@ function MyGames() {
   }
 
   return (
-    <div>
+    <div className="myGames">
         <div>
-            <h1>Type your username</h1>
+            <h1>Type your username to look for your games</h1>
             <input
                 type="text"
                 value={searchName}

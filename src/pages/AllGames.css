@@ -1,0 +1,27 @@
+.allGamesHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.allGamesHeading h1{
+    font-size: 75px;
+    color: #DFE6DA;
+}
+
+.allGamesHeading p{
+    font-size: 40px;
+    color: #cad1c5;
+}
+
+.allGamesHeading button{
+    height: 75px;
+    margin-left: 20%;
+}
+
+.createNewGame {
+    display: flex;
+    align-items: center;
+}
