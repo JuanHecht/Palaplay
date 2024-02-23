@@ -1,0 +1,31 @@
+.gameInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gameInfoContainer h1{
+    font-size: 65px;
+    margin-left: 280px;
+    color: #014421;
+}
+
+.gameInfo h2{
+    font-size: 45px;
+    color: #355E3B;
+}
+
+.gameInfo p{
+    font-size: 22px;
+    color: #CBD5C0;
+}
+
+.firstContainer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+}
+
+.firstContainer .info{
+    margin-left: 40px;
+}

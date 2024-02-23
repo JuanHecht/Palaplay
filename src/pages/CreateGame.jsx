@@ -47,7 +47,7 @@ function NewGameForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="gameForm">
       <div>
         <label>Title:</label>
         <input

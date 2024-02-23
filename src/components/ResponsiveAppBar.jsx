@@ -65,6 +65,7 @@ import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import { Link } from 'react-router-dom';
+import { Margin } from '@mui/icons-material';
 const pages = ['Home', 'Games', 'My Games', 'My friends'];
 function ResponsiveAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -116,10 +117,10 @@ function ResponsiveAppBar() {
             sx={{ flexGrow: 1, color: 'white', display: { xs: 'none', sm: 'block' } }} // Adjusted the display based on screen width
           >
             <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-              <img src={"logo.png"} alt="Logo" height="40" />
-              PALAPADEL
+              <img src={"logo2.png"} alt="Logo" height="55" />
             </Link>
           </Typography>
+          <h2>PALAPLAY</h2>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' } }}>
             {pages.map((page, index) => (
               <Link to={page} key={index} style={{ textDecoration: 'none', color: 'white' }}>

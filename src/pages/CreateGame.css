@@ -1,1 +1,68 @@
+ /*  .gameForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
+  /* CreateGame.css */
+
+.gameForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #CBD5C0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+  }
+  
+  .gameForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .gameForm input[type="text"],
+  .gameForm input[type="date"],
+  .gameForm input[type="time"],
+  .gameForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .gameForm input[type="text"]:last-of-type {
+    margin-bottom: 5px;
+  }
+  
+  .gameForm select {
+    appearance: none;
+  }
+  
+  .gameForm button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #819171;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .gameForm button:hover {
+    background-color: #58624f;
+  }
+  
+  .gameForm button[type="button"] {
+    background-color: #28a745;
+    margin-top: 6px;
+  }
+  
+  .gameForm button[type="button"]:hover {
+    background-color: #218838;
+  }
   
