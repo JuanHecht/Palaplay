@@ -4,6 +4,7 @@ import MapView from "./MapView";
 
 function GameCard(props){
     const {game} = props;
+    const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
 
         return (
           <Link to={`game/${game.id}`} key={game.id}>
@@ -28,7 +29,12 @@ function GameCard(props){
               <div className="mapContainer">
                 <h3>Location</h3>
                 <p>{game.location}</p>
-                <MapView  game={game} height='200px' width='200px' zoom='9'/>
+                {/* <MapView  game={game} height='200px' width='200px' zoom='9'/> */}
+                {isSmallScreen ? (
+                  <MapView game={game} height='100px' width='100px' zoom='7' />
+                ) : (
+                  <MapView game={game} height='200px' width='200px' zoom='9' />
+                )}
               </div>
             </div>
           </Link> 

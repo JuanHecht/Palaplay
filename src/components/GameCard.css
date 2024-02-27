@@ -31,3 +31,12 @@
 .mapContainer{
     width: 33%;
 }
+
+@media (max-width: 768px){
+    .card h3{
+        font-size: 18px;
+    }
+    .card p{
+        font-size: 12px;
+    }
+}

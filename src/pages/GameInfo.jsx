@@ -13,6 +13,7 @@ function GameInfo() {
     const { gameId } = useParams();
     // We were loading empty information as first so implemented this solution
     const [isLoading, setIsLoading] = useState(true);
+    const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
 
     useEffect(() => {
         axios.get(`${API_URL}/${gameId}`)
@@ -88,7 +89,11 @@ function GameInfo() {
                     )}
                 </div>
                 <h2>Location</h2>
-                <MapView game={game} height='400px' width='400px' zoom='10'/>
+                {isSmallScreen ? (
+                  <MapView game={game} height='300px' width='300px' zoom='10' />
+                ) : (
+                  <MapView game={game} height='400px' width='400px' zoom='10' />
+                )}
             </div>
         </div>
     )

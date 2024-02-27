@@ -3,6 +3,9 @@
     flex-direction: column;
     align-items: center;
   }
+.gamesImg-hidden{
+    display: none;
+}
 
 .gamesByLevel, .gamesByFriends{
     width: 100vw;
@@ -38,4 +41,39 @@
 .gamesImg h1{
     font-size: 60px;
     color: #014421;
+}
+
+@media (max-width: 768px) {
+    .gamesByLevel, .gamesByFriends{
+        flex-direction: column;
+        align-items: center;
+    }
+    .gamesImg-hidden{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .gamesImg-hidden h1{
+        font-size: 40px;
+        z-index: 1;
+        color: #014421;
+    }
+    .gamesWithFriendsTitle{
+        display: none;
+    }
+    .gamesImg h1{
+        font-size: 40px;
+        z-index: 1;
+    }
+    .gamesImg img{
+        display: none;
+    }
+    .friends, .level{
+        width: 90vw;
+    }
+    .friendsBanner, .levelBanner{
+        height: fit-content;
+    }
+    
 }

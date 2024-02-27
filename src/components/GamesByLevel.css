@@ -44,3 +44,10 @@
     margin-bottom: 0.2rem;
     color: #555;
 }
+
+@media (max-width:768px){
+    .gamesImg h1{
+        font-size: 45px;
+    }
+    
+}

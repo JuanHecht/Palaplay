@@ -29,3 +29,20 @@
 .firstContainer .info{
     margin-left: 40px;
 }
+
+@media (max-width: 768px){
+    .gameInfoContainer h1{
+        font-size: 45px;
+        margin-left: 15%;
+    }
+    .gameInfo h2{
+        font-size: 28px;
+    }
+    .gameInfo p{
+        font-size: 17px;
+    }
+    .firstContainer .info{
+        margin-left: 25px;
+    }
+
+}

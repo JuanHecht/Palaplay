@@ -16,11 +16,14 @@ function Homepage(){
                 </div>
             </div>
             <div className="gamesByFriends">
+            <div className="gamesImg-hidden">
+                <h1>Look where your friends are playing</h1>
+            </div>
                 <div className='friends'>
                     <GamesWithFriends />
                 </div>
                 <div className="gamesImg">
-                    <h1>Look where your friends are playing</h1>
+                    <h1 className="gamesWithFriendsTitle">Look where your friends are playing</h1>
                     <img src="/assets/images/padelFriends.jpg" alt="" />
                 </div>
             </div>
