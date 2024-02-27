@@ -46,3 +46,9 @@
   margin: 0 auto;
   background-color: #9CAF88;
 }
+body {
+  overscroll-behavior: none;
+}
+body {
+  overflow-x: hidden;
+}
